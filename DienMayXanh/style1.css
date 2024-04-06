@@ -1,0 +1,98 @@
+
+img {
+    max-width: 100%;
+}
+
+.wrraper {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+header {
+    height: 100px;
+    background: #019ce0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    height: 30px;
+    font-size: 16px;
+    background: #152a4d;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+nav li {
+    list-style: none;
+    margin: 0px 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    height: 250px;
+    background-image: url(img/7cc2ad0ebf35126b4b24.jpg);
+    background-size: 100% 100%;
+}
+.content-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-size: 24px;
+    color: #34431a;
+    font-weight: bold;
+}
+.container {
+    border: solid 1px red;
+    width: 100%; /* Adjusted width for responsiveness */
+    max-width: 1200px; /* Maximum width */
+    margin: 0px auto;
+    margin: 10px;
+}
+
+.form-search input {
+    padding: 5px;
+    padding-left: 5px;
+    margin:10px 0;
+    
+    
+    height: 30px;
+    width: calc(100% - 22px); /* Take full width with padding included */
+}
+
+.container button {
+    padding: 5px;
+    padding-bottom: 5px;
+    height: 30px;
+    width: 100%; /* Take full width */
+    margin-top: 10px;
+    margin-left: 4px;
+    margin-right: auto;
+    margin-bottom: 4px;
+    width: calc(100% - 22px);
+    line-height: 25px;  /* Add some space between input and button */
+}
+
+
+@media (max-width: 768px) {
+    .form-search input {
+        width: calc(100% - 22px); /* Adjust width for larger screens */
+    }
+
+    .container button {
+        width: calc(100% - 22px); /* Adjust width for larger screens */
+    }
+    
+}

@@ -1,0 +1,118 @@
+/* Reset default styles for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ensure images don't overflow their containers */
+img {
+    max-width: 100%;
+}
+
+/* Wrapper for centering content */
+.wrraper {
+    width: 100%; /* Adjusted width to 100% for responsiveness */
+    max-width: 1200px; /* Set maximum width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0 20px; /* Add padding to prevent content from touching edges */
+}
+
+/* Header styling */
+header {
+    height: 100px;
+    background: #019ce0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navigation menu styling */
+nav {
+    height: 30px;
+    font-size: 16px;
+    background: #152a4d;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 20px; /* Add spacing between navigation items */
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+/* Banner styling */
+.banner {
+    height: 250px;
+    background-image: url(img/7cc2ad0ebf35126b4b24.jpg);
+    background-size: cover; /* Ensure the image covers the entire banner */
+}
+
+/* News section styling */
+.news {
+    border: 1px solid gray;
+    width: 100%;
+    max-width: 1200px; /* Set maximum width */
+    margin: 20px auto; /* Center the news section horizontally */
+    display: flex;
+    flex-wrap: wrap; /* Allow news cards to wrap on smaller screens */
+    justify-content: space-around; /* Add space between news cards */
+}
+
+.card-news {
+    width: calc(50% - 20px); /* Set width for news cards with spacing */
+    margin-bottom: 20px; /* Add margin at the bottom of news cards */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.newsr {
+    margin: 20px; /* Adjust margin for image container */
+}
+
+.newsl {
+    margin: 20px; /* Adjust margin for news content container */
+}
+
+.newsl-sub {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.news-title {
+    margin: 20px 0; /* Add margin at the top and bottom */
+    font-size: 24px;
+    font-weight: bold;
+    color: #34431a;
+    text-align: center; /* Center align news title */
+}
+
+/* Footer styling */
+footer {
+    height: 50px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #152a4d;
+    width: 100%; /* Set width to 100% */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .card-news {
+        width: calc(100% - 20px); /* Set width to 100% for mobile screens */
+    }
+}
